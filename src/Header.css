@@ -1,0 +1,132 @@
+/* Header Ana Kapsayıcı */
+.seyyah-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f3f4f6;
+  width: 100%;
+}
+
+.seyyah-header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.seyyah-logo img {
+  width: 170px;
+  object-fit: contain;
+  padding: 2px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.seyyah-logo img:hover {
+  opacity: 0.9;
+}
+
+/* Navigasyon Linkleri */
+.seyyah-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.seyyah-nav a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.seyyah-nav a:hover {
+  color: #78350f;
+}
+
+.seyyah-nav .ozel-link {
+  color: #78350f;
+  font-weight: 600;
+}
+
+/* Sağ Bölüm (Dil, Giriş / Kullanıcı Paneli) */
+.seyyah-sag-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dil-secenek {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.dil-aktif {
+  color: #78350f;
+  font-weight: 700;
+}
+
+.dil-pasif {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.dil-pasif:hover {
+  color: #1f2937;
+}
+
+.giris-buton {
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.giris-buton:hover {
+  border-color: #78350f;
+}
+
+.kullanici-kutu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fdf8f6;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(120, 53, 15, 0.15);
+}
+
+.kullanici-isim {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.cikis-buton {
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  background-color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cikis-buton:hover {
+  background-color: #fef2f2;
+}
